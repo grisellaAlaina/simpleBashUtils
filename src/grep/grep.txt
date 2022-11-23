@@ -1,0 +1,2 @@
+s21_grep.c:      for (int i = 1; i < 4; i++) {
+Makefile:	CK_FORK=no valgrind --tool=memcheck --leak-check=full --show-leak-kinds=all --show-reachable=no --leak-resolution=med --track-origins=yes ./s21_grep -n void -s s21_grep.c
